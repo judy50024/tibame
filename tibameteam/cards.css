@@ -1,0 +1,103 @@
+html, body{
+
+  height:100%;
+}
+
+h1{
+    text-align: center;
+    padding:2%;
+}
+
+*{
+
+    font-family: 'Noto Sans TC', sans-serif;
+}
+.box{
+  padding:5%;
+}
+/* Float four columns side by side */
+.column {
+    float: left;
+    width: 23%;
+    margin-bottom: 35px;
+    padding: 0 15px;
+    text-align: center;
+}
+
+/* Remove extra left and right margins, due to padding in columns */
+.row {
+    margin: 0 -5px;
+    display: flex;
+    justify-content: center;
+}
+
+
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
+  
+  /* Add some shadows to create a card effect */
+  .card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Some left and right padding inside the container */
+  .container {
+    padding: 0 16px;
+  }
+  
+  /* Clear floats */
+  .container::after, .row::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+  
+  .title {
+    color: grey;
+  }
+  
+  .button {
+    border: none;
+    outline: 0;
+    display: inline-block;
+    padding: 8px;
+    color: white;
+    background-color: #5f9ea0;
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+    border-radius:15px;
+  }
+  
+  .button:hover {
+    background-color: #555;
+  }
+
+ a{
+     color:white;
+     text-decoration:none;
+ }
+
+
+
+
+
+   /* Display the columns below each other instead of side by side on small screens */
+   @media screen and (max-width: 650px) {
+    .column {
+        width: 100%;
+        display: block;
+        margin-bottom: 20px;
+        
+    }
+    h2{
+        font-size: 100%;
+    }
+  }
